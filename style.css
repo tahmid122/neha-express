@@ -1,0 +1,381 @@
+/* Reset Code & Common Codes */
+:root{
+    --primary-color: rgb(11, 181, 48);
+    --secondary-color: rgba(36, 122, 55, 0.9);
+    --padding: 0.3rem;
+    --transition: all 0.3s;
+    --border-radius: 0.6rem;
+    --box-shadow: 0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 0.5)
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+/* Reset Code & Common Codes */
+
+/* Head Starts */
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.upper-navbar{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    padding: var(--padding);
+}
+.upper-nav a{
+    color: white;
+    transition: var(--transition);
+}
+.upper-nav a:hover{
+    text-decoration: overline;
+    color: black;
+}
+.upper-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.neha{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    filter: saturate(0);
+}
+.neha:hover{
+    filter: saturate(1);
+}
+
+.lower-navbar{
+    background-color: var(--secondary-color);
+}
+.lower-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.brand-name{
+    font-size: 2rem;
+}
+.lower-nav a{
+    color: white;
+    transition: var(--transition);
+}
+.lower-nav a:hover{
+    text-decoration: overline;
+    color: black;
+}
+/* Head End */
+
+/* banner start */
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    height: 500px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.marq-text{
+    font-size: 2.5rem;
+    color: yellow;
+}
+.card{
+    box-shadow: var(--box-shadow);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: var(--padding);
+    width: 200px;
+    height: 110px;
+}
+.icon{
+    font-size: 2rem;
+}
+/* banner End */
+
+/* Footer Start here */
+#footer{
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.newsletter input{
+    font-size: 0.8rem;
+    padding: 5px;
+    border: none;
+}
+.btn{
+    font-size: 0.8rem;
+    padding: 5px;
+    margin-left: -10px;
+    border: none;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+/* Footer End here */
+
+/* <!-- Product Section Starts Here --> */
+#product-section{
+    display: flex;
+    padding: 50px 10px;
+}
+.category{
+    flex: 1;
+    
+}
+.category > div{
+    margin-top: 15px;
+}
+.category:first-child{
+    margin-top: 0;
+}
+.sort-by select{
+    padding: 5px;
+}
+.search input, button{
+    padding: 5px;
+}
+.search button{
+    margin-left: -10px;
+}
+.search button:hover{
+    background-color: black;
+    color: white;
+}
+.product{
+    flex: 2;
+}
+
+.action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-item{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    margin-top:20px;
+}
+.product-card{
+    box-shadow: var(--box-shadow);
+    position: relative;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-card > div{
+    margin-top: 5px;
+}
+.product-card span{
+    display: inline-block;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 3px;
+    border-radius: 2px;
+    position: absolute;
+}
+.product-card button{
+    width: 100%;
+    margin-top: 10px;
+    margin: 0 auto;
+    
+}
+.product-card{
+    margin: 10px 10px;
+}
+.product-head img{
+    width: 100%;
+    height:auto;
+}
+.card-btn button{
+    margin-top: 10px;
+    border: none;
+}
+.card-btn button:hover{
+    background-color: var(--secondary-color);
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.pagination button{
+    padding: 10px;
+    border-left: 0;
+}
+.pag-btn:first-child{
+    border-left: 1px solid black;
+}
+.pagination button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+/* <!-- Product Section Ends Here --> */
+/* Register Start */
+#register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 20px;
+    min-height: 75vh;
+}
+.form-card{
+    box-shadow: var(--box-shadow);
+    width: 75%;
+    padding: 15px;
+}
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.form-control label{
+    flex: 0.1;
+    margin-right: 20px;
+    text-align: left;
+    
+}
+.form-control input, textarea{
+    flex: 0.9;
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+}
+
+.form-control  textarea{
+    height: 60px;
+}
+.form-btn-style{
+    width: 150px;
+    padding: 5px;
+    border: none;
+}
+.form-btn-style:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+/* Register End */
+
+/* Contact Section start */
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.contact-container > div{
+    margin: 0 10px;
+}
+
+/* Contact Section End */
+/* Responsive Codes Here */
+@media screen and (max-width:992px) {
+    .upper-nav{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .lower-nav{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    header{
+        position:relative;
+    }
+    .product-item{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        
+    }
+    
+
+@media screen and (max-width:768px) {
+    .service{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    footer{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .form-card{
+        width: 95%;
+    }
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+}
+
+@media screen and (max-width:600px) {
+    footer{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .product-item{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        
+    }
+    .action{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #product-section{
+        flex-direction: column;
+    }
+    .category{
+        align-self: center;
+        margin-bottom: 20px;   
+ }
+}
+
+/* Responsive Codes Here */
